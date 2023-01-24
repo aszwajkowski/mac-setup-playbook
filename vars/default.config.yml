@@ -1,0 +1,125 @@
+---
+downloads: ~/.ansible-downloads/
+
+# Git settings
+git:
+  global:
+    user_name: Adrian Szwajkowski
+    user_email: 3184551+aszwajkowski@users.noreply.github.com
+
+# Homebrew settings
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-drivers # TODO 1.1
+  - homebrew/services # TODO 1.2
+homebrew_installed_packages:
+# Private
+  - jq
+  - wget
+  - httpie
+  - git
+  - gpg
+  - pinentry-mac
+# Work
+  - go
+  - node
+  - terraform
+  - awscli
+  - saml2aws
+  - azure-cli
+  - azcopy
+  - postgresql
+  - postgis
+homebrew_uninstalled_packages: []
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+# Private
+#  - spotify # Music
+#  - tidal # Music
+  - stats # System monitor for menu bar
+  - alfred # Productivity, quick search, hotkeys
+  - maccy # Clipboard manager. !! Use when do not have Alfred Powerpack bought
+  - 1password # Password manager
+  - vivaldi # Web browser based on chromium
+  - gimp # Graphical editor
+  - rectangle # Move and resize windows
+  - iterm2 # Default terminal replacement
+# Work
+  - temurin # Java
+  - visualvm # Profiler
+  - jetbrains-toolbox # IntelliJ, etc.
+  - docker
+  - visual-studio-code # IDE
+  - pgadmin4 # Postgres GUI
+  - microsoft-azure-storage-explorer
+
+# TODO 1.1 Install drivers
+#- logitech-g-hub # Logitech peripherals
+
+# TODO 1.2 Enable demon/services at the start
+# Services
+#- postgresql
+#- docker
+
+# For applications. Go to System settings > General > Login items > Add to Open at login
+
+# Dock settings
+configure_dock: true
+dockitems_remove:
+  - Safari
+  - Messages
+  - Mail
+  - Maps
+  - Photos
+  - FaceTime
+  - Calendar
+  - Contacts
+  - Reminders
+  - Freeform
+  - TV
+  - Music
+  - Keynote
+  - Numbers
+  - Pages
+  - Terminal
+  - 'App Store'
+  - 'Microsoft Excel'
+  - 'Microsoft OneNote'
+  - 'Microsoft PowerPoint'
+  - 'Microsoft Word'
+  - 'OneDrive'
+dockitems_persist:
+  - name: "Launchpad"
+    path: "/Applications/Launchpad.app"
+    pos: 1
+  - name: "Vivaldi"
+    path: "/Applications/Vivaldi.app"
+    pos: 2
+  - name: "iTerm"
+    path: "/Applications/iTerm.app"
+    pos: 3
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app"
+    pos: 4
+  - name: "Docker Desktop"
+    path: "/Applications/Docker.app"
+    pos: 5
+  - name: "pgAdmin 4"
+    path: "/Applications/pgAdmin 4.app"
+    pos: 6
+  - name: "Slack"
+    path: "/Applications/Slack.app"
+    pos: 7
+  - name: "Microsoft Teams"
+    path: "/Applications/Microsoft Teams.app"
+    pos: 8
+  - name: "Microsoft Outlook"
+    path: "/Applications/Microsoft Outlook.app"
+    pos: 9
+  - name: "Notes"
+    path: "/Applications/Notes.app"
+    pos: 10
+  - name: "System Settings"
+    path: "/Applications/System Settings.app"
+    pos: 11
