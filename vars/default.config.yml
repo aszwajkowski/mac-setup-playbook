@@ -13,6 +13,7 @@ homebrew_taps:
   - homebrew/cask
   - homebrew/cask-drivers # TODO 1.1
   - homebrew/services # TODO 1.2
+  - hashicorp/tap
 homebrew_installed_packages:
 # Private
   - jq
@@ -27,14 +28,21 @@ homebrew_installed_packages:
   - node
   - terraform
   - terragrunt
+  - kubectl
   - awscli
   - saml2aws
   - azure-cli
   - azcopy
+  - Azure/kubelogin/kubelogin
   - postgresql
   - postgis
   - osmium-tool
   - osmosis
+  - hashicorp/tap/vault # Secrets management
+  - certbot # SSL certificates - Let's Encrypt
+#  - chruby # Ruby package# manager
+#  - ruby-install # Ruby
+#  - xz # Data compression
 homebrew_uninstalled_packages: []
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -54,6 +62,7 @@ homebrew_cask_apps:
   - visualvm # Profiler
   - jetbrains-toolbox # IntelliJ, etc.
   - docker
+  - openlens # Kubernetes GUI
   - visual-studio-code # IDE
   - pgadmin4 # Postgres GUI
   - microsoft-azure-storage-explorer
@@ -106,24 +115,27 @@ dockitems_persist:
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app"
     pos: 4
+  - name: "OpenLens"
+    path: "/Applications/OpenLens.app"
+    pos: 5
   - name: "Docker Desktop"
     path: "/Applications/Docker.app"
-    pos: 5
+    pos: 6
   - name: "pgAdmin 4"
     path: "/Applications/pgAdmin 4.app"
-    pos: 6
+    pos: 7
   - name: "Slack"
     path: "/Applications/Slack.app"
-    pos: 7
+    pos: 8
   - name: "Microsoft Teams"
     path: "/Applications/Microsoft Teams.app"
-    pos: 8
+    pos: 9
   - name: "Microsoft Outlook"
     path: "/Applications/Microsoft Outlook.app"
-    pos: 9
+    pos: 10
   - name: "Notes"
     path: "/Applications/Notes.app"
-    pos: 10
+    pos: 11
   - name: "System Settings"
     path: "/Applications/System Settings.app"
-    pos: 11
+    pos: 12
