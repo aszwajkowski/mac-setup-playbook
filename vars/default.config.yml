@@ -24,11 +24,15 @@ homebrew_installed_packages:
   - gpg
   - pinentry-mac
   - go
+  - gnu-time
 # Work
   - node
   - terraform
   - terragrunt
   - kubectl
+  - k9s
+  - helm
+  - argocd
   - awscli
   - saml2aws
   - azure-cli
