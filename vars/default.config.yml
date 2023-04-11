@@ -26,6 +26,7 @@ homebrew_installed_packages:
   - go
   - gnu-time
   - fzf
+  - watch
 # Work
   - node
   - terraform
@@ -62,15 +63,17 @@ homebrew_cask_apps:
   - gimp # Graphical editor
   - rectangle # Move and resize windows
   - iterm2 # Default terminal replacement
+  - alt-tab # Window switcher
 # Work
   - temurin # Java
   - visualvm # Profiler
   - jetbrains-toolbox # IntelliJ, etc.
-  - docker
+  - docker # Containerization
   - openlens # Kubernetes GUI
   - visual-studio-code # IDE
   - pgadmin4 # Postgres GUI
-  - microsoft-azure-storage-explorer
+  - microsoft-azure-storage-explorer # Azure resources explorer
+  - confluent-cli # Confluent Cloud
 
 # TODO 1.1 Install drivers
 #- logitech-g-hub # Logitech peripherals
