@@ -28,6 +28,7 @@ homebrew_installed_packages:
   - fzf
   - watch
 # Work
+  - neovim
   - node
   - terraform
   - terragrunt
@@ -74,6 +75,7 @@ homebrew_cask_apps:
   - pgadmin4 # Postgres GUI
   - microsoft-azure-storage-explorer # Azure resources explorer
   - confluent-cli # Confluent Cloud
+  - rancher # Container management
 
 # TODO 1.1 Install drivers
 #- logitech-g-hub # Logitech peripherals
