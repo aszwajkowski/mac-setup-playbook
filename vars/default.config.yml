@@ -69,7 +69,6 @@ homebrew_cask_apps:
   - temurin # Java
   - visualvm # Profiler
   - jetbrains-toolbox # IntelliJ, etc.
-  - docker # Containerization
   - openlens # Kubernetes GUI
   - visual-studio-code # IDE
   - pgadmin4 # Postgres GUI
