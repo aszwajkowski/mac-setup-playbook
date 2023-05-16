@@ -75,6 +75,7 @@ homebrew_cask_apps:
   - microsoft-azure-storage-explorer # Azure resources explorer
   - confluent-cli # Confluent Cloud
   - rancher # Container management
+  - qgis # Geospatial visualization
 
 # TODO 1.1 Install drivers
 #- logitech-g-hub # Logitech peripherals
@@ -82,7 +83,6 @@ homebrew_cask_apps:
 # TODO 1.2 Enable demon/services at the start
 # Services
 #- postgresql
-#- docker
 
 # For applications. Go to System settings > General > Login items > Add to Open at login
 
@@ -127,8 +127,8 @@ dockitems_persist:
   - name: "OpenLens"
     path: "/Applications/OpenLens.app"
     pos: 5
-  - name: "Docker Desktop"
-    path: "/Applications/Docker.app"
+  - name: "Rancher Desktop"
+    path: "/Applications/Rancher Desktop.app"
     pos: 6
   - name: "pgAdmin 4"
     path: "/Applications/pgAdmin 4.app"
