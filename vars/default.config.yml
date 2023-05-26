@@ -27,6 +27,7 @@ homebrew_installed_packages:
   - gnu-time
   - fzf
   - watch
+  - pre-commit
 # Work
   - neovim
   - node
@@ -47,6 +48,7 @@ homebrew_installed_packages:
   - osmosis
   - hashicorp/tap/vault # Secrets management
   - certbot # SSL certificates - Let's Encrypt
+  - graphviz
 #  - chruby # Ruby package# manager
 #  - ruby-install # Ruby
 #  - xz # Data compression
