@@ -44,16 +44,17 @@ packages:
   ruby: &ruby
     - ruby-install
     - chruby # Ruby package manager
-  cloud: &cloud
-    - *aws
-    - *azure
-  infra: &infra
-    - *iac
-    - *k8s
-    - *cloud
+  go: &go
     - go
-  private: &packages_private
-    - *git
+  cloud: &cloud
+    <<: *aws
+    <<: *azure
+  infra: &infra
+    <<: *iac
+    <<: *k8s
+    <<: *cloud
+    <<: *go
+  packages_private_list: &packages_private_list
     - jq
     - wget
     - httpie
@@ -64,14 +65,18 @@ packages:
     - fzf
     - neovim
     - node
-  work: &packages_work
-    - *infra
-    - *databases
-    - *osm
+  private: &packages_private
+    <<: *git
+    <<: *packages_private_list
+  packages_work_list: &packages_work_list
     - hashicorp/tap/vault # Secrets management
     - certbot # SSL certificates - Let's Encrypt
     - graphviz
-
+  work: &packages_work
+    <<: *infra
+    <<: *databases
+    <<: *osm
+    <<: *packages_work_list
 apps:
   java: &java
     - temurin # Java
@@ -93,23 +98,25 @@ apps:
     - rectangle # Move and resize windows
     - iterm2 # Default terminal replacement
     - alt-tab # Window switcher
-  work: &apps_work
-    - *java
-    - *container_mgmt
+  apps_work_list: &apps_work_list
     - pgadmin4 # Postgres GUI
     - visual-studio-code # IDE
     - microsoft-azure-storage-explorer # Azure resources explorer
     - confluent-cli # Confluent Cloud
     - qgis # Geospatial visualization
+  work: &apps_work
+    <<: *java
+    <<: *container_mgmt
+    <<: *apps_work_list
 
 homebrew_installed_packages:
-  - *packages_private
-  - *packages_work
+  <<: *packages_private
+  <<: *packages_work
 homebrew_uninstalled_packages: []
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - *apps_private
-  - *apps_work
+  <<: *apps_private
+  <<: *apps_work
 
 # TODO 1.1 Install drivers
 #- logitech-g-hub # Logitech peripherals
