@@ -62,8 +62,7 @@ homebrew_cask_apps:
 #  - spotify # Music
 #  - tidal # Music
   - stats # System monitor for menu bar
-  - alfred # Productivity, quick search, hotkeys
-  - maccy # Clipboard manager. !! Use when do not have Alfred Powerpack bought
+  - raycast # Shortcut to everything
   - 1password # Password manager
   - vivaldi # Web browser based on chromium
   - gimp # Graphical editor
