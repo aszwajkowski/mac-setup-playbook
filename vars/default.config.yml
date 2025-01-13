@@ -14,7 +14,7 @@ homebrew_taps:
   - homebrew/cask-drivers # TODO 1.1
   - homebrew/services # TODO 1.2
   - hashicorp/tap
-  - koekeishiya/formulae
+  - FelixKratz/formulae
   - databricks/tap
 homebrew_installed_packages:
 # Private
@@ -52,8 +52,7 @@ homebrew_installed_packages:
   - hashicorp/tap/vault # Secrets management
   - certbot # SSL certificates - Let's Encrypt
   - homebrew/core/graphviz
-  - koekeishiya/formulae/yabai
-  - koekeishiya/formulae/skhd
+  - borders # Colored borders around windows
   - databricks
 #  - chruby # Ruby package# manager
 #  - ruby-install # Ruby
@@ -84,6 +83,7 @@ homebrew_cask_apps:
   - qgis # Geospatial visualization
   - karabiner-elements
   - insomnia # REST client/API development
+  - nikitabobko/tap/aerospace # Tiling window manager
 
 # TODO 1.1 Install drivers
 #- logitech-g-hub # Logitech peripherals
