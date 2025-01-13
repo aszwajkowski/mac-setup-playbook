@@ -79,6 +79,7 @@ homebrew_cask_apps:
   - rancher # Container management
   - qgis # Geospatial visualization
   - karabiner-elements
+  - insomnia # REST client/API development
 
 # TODO 1.1 Install drivers
 #- logitech-g-hub # Logitech peripherals
