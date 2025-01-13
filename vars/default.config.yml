@@ -14,6 +14,7 @@ homebrew_taps:
   - homebrew/cask-drivers # TODO 1.1
   - homebrew/services # TODO 1.2
   - hashicorp/tap
+  - koekeishiya/formulae
 homebrew_installed_packages:
 # Private
   - jq
@@ -39,7 +40,7 @@ homebrew_installed_packages:
   - argocd
   - awscli
   - saml2aws
-  - azure-cli
+  - homebrew/core/azure-cli
   - azcopy
   - Azure/kubelogin/kubelogin
   - postgresql
@@ -48,7 +49,9 @@ homebrew_installed_packages:
   - osmosis
   - hashicorp/tap/vault # Secrets management
   - certbot # SSL certificates - Let's Encrypt
-  - graphviz
+  - homebrew/core/graphviz
+  - koekeishiya/formulae/yabai
+  - koekeishiya/formulae/skhd
 #  - chruby # Ruby package# manager
 #  - ruby-install # Ruby
 #  - xz # Data compression
@@ -64,9 +67,7 @@ homebrew_cask_apps:
   - 1password # Password manager
   - vivaldi # Web browser based on chromium
   - gimp # Graphical editor
-  - rectangle # Move and resize windows
   - iterm2 # Default terminal replacement
-  - alt-tab # Window switcher
 # Work
   - temurin # Java
   - visualvm # Profiler
@@ -78,6 +79,7 @@ homebrew_cask_apps:
   - confluent-cli # Confluent Cloud
   - rancher # Container management
   - qgis # Geospatial visualization
+  - karabiner-elements
 
 # TODO 1.1 Install drivers
 #- logitech-g-hub # Logitech peripherals
@@ -135,11 +137,11 @@ dockitems_persist:
   - name: "pgAdmin 4"
     path: "/Applications/pgAdmin 4.app"
     pos: 7
+  - name: "Microsoft Teams (work or school)"
+    path: "/Applications/Microsoft Teams.app"
+    pos: 8
   - name: "Slack"
     path: "/Applications/Slack.app"
-    pos: 8
-  - name: "Microsoft Teams"
-    path: "/Applications/Microsoft Teams.app"
     pos: 9
   - name: "Microsoft Outlook"
     path: "/Applications/Microsoft Outlook.app"
