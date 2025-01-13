@@ -14,102 +14,70 @@ homebrew_taps:
   - homebrew/cask-drivers # TODO 1.1
   - homebrew/services # TODO 1.2
   - hashicorp/tap
-
-packages:
-  infra_as_code: &iac
-    - terraform
-    - terragrunt
-  kubernetes: &k8s
-    - kubectl
-    - k9s
-    - helm
-    - argocd
-  version_control: &git
-    - git
-    - gh
-    - pre-commit
-  databases: &databases
-    - postgresql
-    - postgis # Geospatial support to PostgreSQL
-  open_street_map: &osm
-    - osmium-tool
-    - osmosis
-  aws: &aws
-    - awscli
-    - saml2aws
-  azure: &azure
-    - azure-cli
-    - azcopy
-    - Azure/kubelogin/kubelogin
-  ruby: &ruby
-    - ruby-install
-    - chruby # Ruby package manager
-  cloud: &cloud
-    - *aws
-    - *azure
-  infra: &infra
-    - *iac
-    - *k8s
-    - *cloud
-    - go
-  private: &packages_private
-    - *git
-    - jq
-    - wget
-    - httpie
-    - gpg
-    - pinentry-mac
-    - gnu-time
-    - watch
-    - fzf
-    - neovim
-    - node
-  work: &packages_work
-    - *infra
-    - *databases
-    - *osm
-    - hashicorp/tap/vault # Secrets management
-    - certbot # SSL certificates - Let's Encrypt
-    - graphviz
-
-apps:
-  java: &java
-    - temurin # Java
-    - visualvm # Java profiler
-    - jetbrains-toolbox # IntelliJ, etc.
-  container-management: &container_mgmt
-    - openlens # Kubernetes GUI
-    - rancher # Container management
-  music: &music
-    - spotify
-    - tidal
-  private: &apps_private
-    - stats # System monitor for menu bar
-    - alfred # Productivity, quick search, hotkeys
-    - maccy # Clipboard manager. !! Use when do not have Alfred Powerpack bought
-    - 1password # Password manager
-    - vivaldi # Web browser based on chromium
-    - gimp # Graphical editor
-    - rectangle # Move and resize windows
-    - iterm2 # Default terminal replacement
-    - alt-tab # Window switcher
-  work: &apps_work
-    - *java
-    - *container_mgmt
-    - pgadmin4 # Postgres GUI
-    - visual-studio-code # IDE
-    - microsoft-azure-storage-explorer # Azure resources explorer
-    - confluent-cli # Confluent Cloud
-    - qgis # Geospatial visualization
-
 homebrew_installed_packages:
-  - *packages_private
-  - *packages_work
+# Private
+  - jq
+  - wget
+  - httpie
+  - git
+  - gh
+  - gpg
+  - pinentry-mac
+  - go
+  - gnu-time
+  - fzf
+  - watch
+  - pre-commit
+# Work
+  - neovim
+  - node
+  - terraform
+  - terragrunt
+  - kubectl
+  - k9s
+  - helm
+  - argocd
+  - awscli
+  - saml2aws
+  - azure-cli
+  - azcopy
+  - Azure/kubelogin/kubelogin
+  - postgresql
+  - postgis
+  - osmium-tool
+  - osmosis
+  - hashicorp/tap/vault # Secrets management
+  - certbot # SSL certificates - Let's Encrypt
+  - graphviz
+#  - chruby # Ruby package# manager
+#  - ruby-install # Ruby
+#  - xz # Data compression
 homebrew_uninstalled_packages: []
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - *apps_private
-  - *apps_work
+# Private
+#  - spotify # Music
+#  - tidal # Music
+  - stats # System monitor for menu bar
+  - alfred # Productivity, quick search, hotkeys
+  - maccy # Clipboard manager. !! Use when do not have Alfred Powerpack bought
+  - 1password # Password manager
+  - vivaldi # Web browser based on chromium
+  - gimp # Graphical editor
+  - rectangle # Move and resize windows
+  - iterm2 # Default terminal replacement
+  - alt-tab # Window switcher
+# Work
+  - temurin # Java
+  - visualvm # Profiler
+  - jetbrains-toolbox # IntelliJ, etc.
+  - openlens # Kubernetes GUI
+  - visual-studio-code # IDE
+  - pgadmin4 # Postgres GUI
+  - microsoft-azure-storage-explorer # Azure resources explorer
+  - confluent-cli # Confluent Cloud
+  - rancher # Container management
+  - qgis # Geospatial visualization
 
 # TODO 1.1 Install drivers
 #- logitech-g-hub # Logitech peripherals
