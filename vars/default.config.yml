@@ -75,6 +75,7 @@ homebrew_cask_apps:
   - visual-studio-code # IDE
   - pgadmin4 # Postgres GUI
   - microsoft-azure-storage-explorer # Azure resources explorer
+  - microsoft-remote-desktop # Remote desktop
   - confluent-cli # Confluent Cloud
   - rancher # Container management
   - qgis # Geospatial visualization
