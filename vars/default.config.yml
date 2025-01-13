@@ -30,6 +30,7 @@ homebrew_installed_packages:
   - fzf
   - watch
   - pre-commit
+  - ranger # Console file manager
 # Work
   - neovim
   - node
