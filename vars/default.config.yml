@@ -15,6 +15,7 @@ homebrew_taps:
   - homebrew/services # TODO 1.2
   - hashicorp/tap
   - koekeishiya/formulae
+  - databricks/tap
 homebrew_installed_packages:
 # Private
   - jq
@@ -52,6 +53,7 @@ homebrew_installed_packages:
   - homebrew/core/graphviz
   - koekeishiya/formulae/yabai
   - koekeishiya/formulae/skhd
+  - databricks
 #  - chruby # Ruby package# manager
 #  - ruby-install # Ruby
 #  - xz # Data compression
