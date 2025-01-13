@@ -34,7 +34,7 @@ homebrew_installed_packages:
 # Work
   - neovim
   - node
-  - terraform
+  - hashicorp/tap/terraform
   - terragrunt
   - kubectl
   - k9s
