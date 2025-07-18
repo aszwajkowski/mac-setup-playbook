@@ -11,8 +11,6 @@ git:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
-  - homebrew/cask-drivers # TODO 1.1
-  - homebrew/services # TODO 1.2
   - hashicorp/tap
   - FelixKratz/formulae
   - databricks/tap
@@ -69,6 +67,7 @@ homebrew_cask_apps:
   - vivaldi # Web browser based on chromium
   - gimp # Graphical editor
   - iterm2 # Default terminal replacement
+  - logitech-g-hub # Logitech peripherals
 # Work
   - temurin # Java
   - visualvm # Profiler
@@ -81,12 +80,9 @@ homebrew_cask_apps:
   - confluent-cli # Confluent Cloud
   - rancher # Container management
   - qgis # Geospatial visualization
-  - karabiner-elements
+#  - karabiner-elements # Keyboard customization, only necessary if Raycast is not installed
   - insomnia # REST client/API development
   - nikitabobko/tap/aerospace # Tiling window manager
-
-# TODO 1.1 Install drivers
-#- logitech-g-hub # Logitech peripherals
 
 # TODO 1.2 Enable demon/services at the start
 # Services
@@ -126,33 +122,12 @@ dockitems_persist:
   - name: "Vivaldi"
     path: "/Applications/Vivaldi.app"
     pos: 2
-  - name: "iTerm"
-    path: "/Applications/iTerm.app"
-    pos: 3
-  - name: "Visual Studio Code"
-    path: "/Applications/Visual Studio Code.app"
-    pos: 4
-  - name: "OpenLens"
-    path: "/Applications/OpenLens.app"
-    pos: 5
-  - name: "Rancher Desktop"
-    path: "/Applications/Rancher Desktop.app"
-    pos: 6
-  - name: "pgAdmin 4"
-    path: "/Applications/pgAdmin 4.app"
-    pos: 7
   - name: "Microsoft Teams (work or school)"
     path: "/Applications/Microsoft Teams.app"
-    pos: 8
+    pos: 3
   - name: "Slack"
     path: "/Applications/Slack.app"
-    pos: 9
+    pos: 4
   - name: "Microsoft Outlook"
     path: "/Applications/Microsoft Outlook.app"
-    pos: 10
-  - name: "Notes"
-    path: "/Applications/Notes.app"
-    pos: 11
-  - name: "System Settings"
-    path: "/Applications/System Settings.app"
-    pos: 12
+    pos: 5
