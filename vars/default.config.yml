@@ -14,81 +14,85 @@ homebrew_taps:
   - hashicorp/tap
   - FelixKratz/formulae
   - databricks/tap
+
 homebrew_installed_packages:
-# Private
-  - jq
-  - wget
-  - httpie
-  - git
-  - gh
-  - gpg
-  - pinentry-mac
-  - go
-  - gnu-time
-  - fzf
-  - watch
-  - pre-commit
-  - ranger # Console file manager
-# Work
-  - neovim
-  - node
-  - hashicorp/tap/terraform
-  - terragrunt
-  - kubectl
-  - k9s
-  - helm
+  - act # Run GitHub Actions locally
+  - actionlint
   - argocd
   - awscli
-  - saml2aws
-  - homebrew/core/azure-cli
   - azcopy
+  - azure-cli
   - Azure/kubelogin/kubelogin
-  - postgresql
-  - postgis
+  - btop # Resource monitor
+  - databricks
+  - borders # Colored borders around windows
+  - fzf # Command-line fuzzy finder
+  - git
+  - gh
+  - git
+  - git-lfs
+  - gnu-time
+  - go
+  - gpg
+  - gradle
+  - graphviz
+  - helm
+  - httpie
+  - jq
+  - k9s
+  - kubectl
+  - neovim
+  - node
   - osmium-tool
   - osmosis
-  - hashicorp/tap/vault # Secrets management
-  - certbot # SSL certificates - Let's Encrypt
-  - homebrew/core/graphviz
-  - borders # Colored borders around windows
-  - databricks
+  - pinentry-mac
+  - pipx
+  - postgis
+  - postgresql
+  - pre-commit
+  - prettier # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+  - saml2aws
+  - superfile # Console file manager
+  - terraform
+  - terragrunt
+  - tflint
+  - vault # Secrets management
+  - watch
+  - wget
 #  - chruby # Ruby package# manager
 #  - ruby-install # Ruby
-#  - xz # Data compression
+
 homebrew_uninstalled_packages: []
+
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-# Private
-#  - spotify # Music
-#  - tidal # Music
-  - stats # System monitor for menu bar
-  - raycast # Shortcut to everything
   - 1password # Password manager
-  - vivaldi # Web browser based on chromium
+  - confluent-cli # Confluent Cloud
+  - dbeaver-community # Universal database client
+  - dockutils # Manage and customize macOS Dock
+  - font-fira-code-nerd-font # Nerd font for terminal
   - gimp # Graphical editor
+  - google-earth-pro # Geospatial visualization
+  - insomnia # REST client/API development
   - iterm2 # Default terminal replacement
-  - logitech-g-hub # Logitech peripherals
-# Work
-  - temurin # Java
-  - visualvm # Profiler
   - jetbrains-toolbox # IntelliJ, etc.
-  - openlens # Kubernetes GUI
-  - visual-studio-code # IDE
-  - pgadmin4 # Postgres GUI
+  - josm # OpenStreetMap editor
+  - logitech-g-hub # Logitech peripherals
   - microsoft-azure-storage-explorer # Azure resources explorer
   - microsoft-remote-desktop # Remote desktop
-  - confluent-cli # Confluent Cloud
-  - rancher # Container management
-  - qgis # Geospatial visualization
-#  - karabiner-elements # Keyboard customization, only necessary if Raycast is not installed
-  - insomnia # REST client/API development
   - nikitabobko/tap/aerospace # Tiling window manager
-
-# TODO 1.2 Enable demon/services at the start
-# Services
-#- postgresql
-
-# For applications. Go to System settings > General > Login items > Add to Open at login
+  - obs # Screen recording and streaming
+  - openlens # Kubernetes GUI
+  - pgadmin4 # Postgres GUI
+  - qgis # Geospatial visualization
+  - rancher # Container management
+  - raycast # Shortcut to everything
+  - stats # System monitor for menu bar
+  - temurin # Java
+  - vb-cable # Virtual audio device
+  - visual-studio-code # IDE
+  - visualvm # Profiler
+  - vivaldi # Web browser based on chromium
 
 # Dock settings
 configure_dock: true
@@ -115,6 +119,7 @@ dockitems_remove:
   - 'Microsoft PowerPoint'
   - 'Microsoft Word'
   - 'OneDrive'
+
 dockitems_persist:
   - name: "Launchpad"
     path: "/Applications/Launchpad.app"
