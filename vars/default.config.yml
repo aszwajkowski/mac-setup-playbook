@@ -24,6 +24,7 @@ homebrew_installed_packages:
   - azure-cli
   - Azure/kubelogin/kubelogin
   - btop # Resource monitor
+  - copilot-cli
   - databricks
   - borders # Colored borders around windows
   - fzf # Command-line fuzzy finder
@@ -43,6 +44,7 @@ homebrew_installed_packages:
   - kubectl
   - neovim
   - node
+  - anomalyco/tap/opencode
   - osmium-tool
   - osmosis
   - pinentry-mac
@@ -82,6 +84,7 @@ homebrew_cask_apps:
   - microsoft-remote-desktop # Remote desktop
   - nikitabobko/tap/aerospace # Tiling window manager
   - obs # Screen recording and streaming
+  - opencode-desktop # Desktop app version of OpenCode terminal
   - openlens # Kubernetes GUI
   - pgadmin4 # Postgres GUI
   - qgis # Geospatial visualization
