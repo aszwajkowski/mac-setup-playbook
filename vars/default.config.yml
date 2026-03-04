@@ -61,6 +61,7 @@ homebrew_installed_packages:
   - vault # Secrets management
   - watch
   - wget
+  - zoxide # Smarter cd command with fuzzy matching and ranking based on frecency
 #  - chruby # Ruby package# manager
 #  - ruby-install # Ruby
 
