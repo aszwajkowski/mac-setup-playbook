@@ -85,6 +85,7 @@ homebrew_cask_apps:
   - microsoft-remote-desktop # Remote desktop
   - nikitabobko/tap/aerospace # Tiling window manager
   - obs # Screen recording and streaming
+  - obsidian # Note-taking app
   - opencode-desktop # Desktop app version of OpenCode terminal
   - openlens # Kubernetes GUI
   - pgadmin4 # Postgres GUI
