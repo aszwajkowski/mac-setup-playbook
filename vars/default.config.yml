@@ -76,7 +76,8 @@ homebrew_cask_apps:
   - font-fira-code-nerd-font # Nerd font for terminal
   - gimp # Graphical editor
   - google-earth-pro # Geospatial visualization
-  - insomnia # REST client/API development
+#  - insomnia # REST client/API development; Reflection for GRPC does not work wel
+  - postman
   - iterm2 # Default terminal replacement
   - jetbrains-toolbox # IntelliJ, etc.
   - josm # OpenStreetMap editor
