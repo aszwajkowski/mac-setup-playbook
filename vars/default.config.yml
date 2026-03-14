@@ -11,23 +11,20 @@ git:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
-  - hashicorp/tap
-  - FelixKratz/formulae
-  - databricks/tap
 
 homebrew_installed_packages:
   - act # Run GitHub Actions locally
   - actionlint
+  - anomalyco/tap/opencode
   - argocd
   - awscli
   - azcopy
   - azure-cli
   - Azure/kubelogin/kubelogin
   - btop # Resource monitor
-  - copilot-cli
-  - databricks
+  - databricks/tap/databricks
   - dockutil
-  - borders # Colored borders around windows
+  - FelixKratz/formulae/borders # Colored borders around windows
   - fzf # Command-line fuzzy finder
   - git
   - gh
@@ -38,14 +35,14 @@ homebrew_installed_packages:
   - gpg
   - gradle
   - graphviz
+  - hashicorp/tap/terraform # Infrastructure as code
+  - hashicorp/tap/vault # Secrets management
   - helm
   - httpie
   - jq
   - k9s
   - kubectl
   - neovim
-  - node
-  - anomalyco/tap/opencode
   - osmium-tool
   - osmosis
   - pinentry-mac
@@ -56,10 +53,9 @@ homebrew_installed_packages:
   - prettier # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
   - saml2aws
   - superfile # Console file manager
-  - terraform
   - terragrunt
   - tflint
-  - vault # Secrets management
+  - trivy
   - watch
   - wget
   - zoxide # Smarter cd command with fuzzy matching and ranking based on frecency
@@ -72,6 +68,7 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password # Password manager
   - confluent-cli # Confluent Cloud
+  - copilot-cli # GitHub Copilot CLI
   - dbeaver-community # Universal database client
   - font-fira-code-nerd-font # Nerd font for terminal
   - gimp # Graphical editor
