@@ -26,6 +26,7 @@ homebrew_installed_packages:
   - btop # Resource monitor
   - copilot-cli
   - databricks
+  - dockutil
   - borders # Colored borders around windows
   - fzf # Command-line fuzzy finder
   - git
@@ -72,7 +73,6 @@ homebrew_cask_apps:
   - 1password # Password manager
   - confluent-cli # Confluent Cloud
   - dbeaver-community # Universal database client
-  - dockutils # Manage and customize macOS Dock
   - font-fira-code-nerd-font # Nerd font for terminal
   - gimp # Graphical editor
   - google-earth-pro # Geospatial visualization
