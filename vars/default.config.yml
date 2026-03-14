@@ -124,8 +124,8 @@ dockitems_remove:
   - 'OneDrive'
 
 dockitems_persist:
-  - name: "Launchpad"
-    path: "/Applications/Launchpad.app"
+  - name: "Apps"
+    path: "/Applications/Apps.app"
     pos: 1
   - name: "Vivaldi"
     path: "/Applications/Vivaldi.app"
