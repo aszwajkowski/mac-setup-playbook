@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mac-setup-playbook"
+version = "0.1.0"
+description = "Ansible-based macOS setup playbook"
+authors = []
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ansible = "^10.0"
+
+[tool.poetry.group.dev.dependencies]
+ansible-lint = "^24.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

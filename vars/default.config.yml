@@ -49,8 +49,8 @@ homebrew_installed_packages:
   - osmosis
   - pinentry-mac
   - pipx
-  - postgis
-  - postgresql
+  - postgis # PostGIS extension for PostgreSQL
+  - postgresql # PostgreSQL database server
   - pre-commit
   - prettier # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
   - saml2aws
@@ -93,7 +93,7 @@ homebrew_cask_apps:
   - rancher # Container management
   - raycast # Shortcut to everything
   - stats # System monitor for menu bar
-  - temurin # Java
+#  - temurin # Java; Managed by https://sdkman.io
   - vb-cable # Virtual audio device
   - visual-studio-code # IDE
   - visualvm # Profiler
@@ -132,7 +132,7 @@ dockitems_persist:
   - name: "Vivaldi"
     path: "/Applications/Vivaldi.app"
     pos: 2
-  - name: "Microsoft Teams (work or school)"
+  - name: "Microsoft Teams"
     path: "/Applications/Microsoft Teams.app"
     pos: 3
   - name: "Slack"

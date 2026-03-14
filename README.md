@@ -1,48 +1,29 @@
 # Macintosh Setup Playbook
 
-## Initialization
+## Setup
 
-### Option 1) Script
+Clone the repository and run the initialization script. It will install all prerequisites (Xcode CLI tools, Poetry, Ansible, and Galaxy roles).
 
-1. Run [`./initialize.sh`](./initialize.sh) script in the terminal
-   ```shell
-   ./initialize.sh
-   ```
+```shell
+git clone https://github.com/aszwajkowski/mac-setup-playbook.git
+cd mac-setup-playbook
+./initialize.sh
+```
 
-### Option 2) Step-by-step manual commands
+## Run
 
-1. Ensure [Apple's Command Line Tools](https://developer.apple.com/xcode/features/) are installed
-   ```shell
-   xcode-select --install
-   ```
-2. [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/index.html)
+Applies all configurations defined in the playbook to your machine. You will be prompted for your macOS account password.
 
-    1. Add Python 3 to PATH
-   ```shell
-   export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
-   ```
-    2. Upgrade Pip
-   ```shell
-   sudo pip3 install --upgrade pip
-   ```
-    3. Install Ansible
-   ```shell
-   pip3 install ansible
-   ```
+```shell
+poetry run ansible-playbook main.yml --ask-become-pass
+```
 
-3. Clone or download this repository to your local drive
-   ```shell
-   git clone https://github.com/aszwajkowski/mac-setup-playbook.git
-   ```
-4. Install required Ansible roles
-   ```shell
-   cd mac-setup-playbook
-   ansible-galaxy install -r requirements.yml
-   ```
-5. Install all tasks from the playbook (add `--check --diff` at the end for dry-run). Enter your macOS account password when prompted for the 'BECOME' password
-   ```shell
-   ansible-playbook main.yml --ask-become-pass
-   ```
+> **Tip:** Add `--check --diff` for a dry run — no changes will be applied.
 
-> **Note**  
-> If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
+## Update roles
+
+Ansible Galaxy roles and collections are external dependencies. Re-run this command periodically or whenever you pull changes to ensure everything is up to date.
+
+```shell
+poetry run ansible-galaxy install -r requirements.yml
+```
