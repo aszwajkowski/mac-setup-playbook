@@ -34,6 +34,7 @@ homebrew_installed_packages:
   - hashicorp/tap/vault # Secrets management
   - helm
   - httpie
+  - jj # Jujutsu ; git-compatible distributed version control system
   - jq
   - k9s
   - kubectl
