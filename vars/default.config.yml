@@ -32,6 +32,7 @@ homebrew_installed_packages:
   - git-lfs
   - gnu-time
   - go
+  - go-task # Build tool ; Alternative to Makefiles, etc.
   - gpg
   - gradle
   - graphviz
