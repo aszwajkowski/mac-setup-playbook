@@ -1,12 +1,6 @@
 ---
 downloads: ~/.ansible-downloads/
 
-# Git settings
-git:
-  global:
-    user_name: Adrian Szwajkowski
-    user_email: 3184551+aszwajkowski@users.noreply.github.com
-
 # Homebrew settings
 homebrew_taps:
   - homebrew/core
