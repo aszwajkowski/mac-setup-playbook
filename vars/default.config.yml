@@ -50,6 +50,7 @@ homebrew_installed_packages:
   - prettier # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
   - saml2aws
   - superfile # Console file manager
+  - stow # Symlink manager
   - terragrunt
   - tflint
   - tmux # Terminal multiplexer
