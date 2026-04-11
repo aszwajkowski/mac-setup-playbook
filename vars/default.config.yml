@@ -18,6 +18,7 @@ homebrew_installed_packages:
   - bazelisk # Bazel version manager
   - btop # Resource monitor
   - databricks/tap/databricks
+  - dlvhdr/formulae/diffnav # Diff tool for navigating differences in files
   - dockutil
   - FelixKratz/formulae/borders # Colored borders around windows
   - fzf # Command-line fuzzy finder
