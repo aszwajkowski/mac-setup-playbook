@@ -62,6 +62,8 @@ homebrew_installed_packages:
   - watch
   - wget
   - zoxide # Smarter cd command with fuzzy matching and ranking based on frecency
+  - zsh-autosuggestions # Fish-like autosuggestions for zsh
+  - zsh-syntax-highlighting # Fish-like syntax highlighting for zsh
 #  - chruby # Ruby package# manager
 #  - ruby-install # Ruby
 
