@@ -20,6 +20,7 @@ homebrew_installed_packages:
   - databricks/tap/databricks
   - dlvhdr/formulae/diffnav # Diff tool for navigating differences in files
   - dockutil
+  - eza # Modern replacement for ls
   - FelixKratz/formulae/borders # Colored borders around windows
   - fzf # Command-line fuzzy finder
   - git
@@ -50,6 +51,7 @@ homebrew_installed_packages:
   - pre-commit
   - prettier # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
   - saml2aws
+  - sesh # Terminal session manager for tmux
   - superfile # Console file manager
   - stow # Symlink manager
   - terragrunt
