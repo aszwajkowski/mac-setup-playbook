@@ -19,7 +19,6 @@ homebrew_installed_packages:
   - btop # Resource monitor
   - databricks/tap/databricks
   - dlvhdr/formulae/diffnav # Diff tool for navigating differences in files
-  - dockutil
   - eza # Modern replacement for ls
   - FelixKratz/formulae/borders # Colored borders around windows
   - fzf # Command-line fuzzy finder
@@ -78,6 +77,8 @@ homebrew_cask_apps:
   - font-fira-code-nerd-font # Nerd font for terminal
   - gimp # Graphical editor
   - google-earth-pro # Geospatial visualization
+  - hpedrorodrigues/tools/dockutil # Dock management CLI
+  - jandedobbeleer/oh-my-posh/oh-my-posh # Shell prompt theme engine
 #  - insomnia # REST client/API development; Reflection for GRPC does not work wel
   - postman
   - iterm2 # Default terminal replacement
