@@ -25,6 +25,7 @@
       shell: |
         git config --global user.name "{{ git.global.user_name }}"
         git config --global user.email "{{ git.global.user_email }}"
+      when: git is defined
 
     - block:
         - name: Run configured post-provision ansible task files.
