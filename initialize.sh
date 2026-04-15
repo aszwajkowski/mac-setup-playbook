@@ -80,7 +80,7 @@ install_ansible_via_poetry() {
 
 install_ansible_galaxy_roles() {
   log_info "Installing Ansible Galaxy roles and collections..."
-  poetry run ansible-galaxy install -r requirements.yml
+  poetry run ansible-galaxy install -r requirements.yml --force
   log_success "Ansible Galaxy roles and collections installed."
 }
 

@@ -1,0 +1,113 @@
+---
+# macOS system defaults — automated from scratch.md
+# These use community.general.osx_defaults and require elevated privileges.
+
+# --- Appearance ---
+- name: macOS | Set dark mode
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: AppleInterfaceStyle
+    type: string
+    value: Dark
+  become: true
+  tags: [ 'macos', 'appearance' ]
+
+# --- Keyboard ---
+# Note: Modifier key remapping (Control <-> Command) is per-device and typically
+# requires manual configuration in System Settings > Keyboard > Modifier Keys.
+
+# --- Mouse ---
+- name: macOS | Disable natural scrolling for mouse
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.swipescrolldirection
+    type: bool
+    value: false
+  tags: [ 'macos', 'input' ]
+
+# --- Trackpad ---
+- name: macOS | Enable tap to click on trackpad
+  community.general.osx_defaults:
+    domain: com.apple.AppleMultitouchTrackpad
+    key: Clicking
+    type: bool
+    value: true
+  tags: [ 'macos', 'input' ]
+
+- name: macOS | Enable tap to click on trackpad (Bluetooth)
+  community.general.osx_defaults:
+    domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+    key: Clicking
+    type: bool
+    value: true
+  tags: [ 'macos', 'input' ]
+
+# --- Dock ---
+- name: macOS | Auto-hide the Dock
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: autohide
+    type: bool
+    value: true
+  notify: restart dock
+  tags: [ 'macos', 'dock' ]
+
+- name: macOS | Do not show recent apps in Dock
+  community.general.osx_defaults:
+    domain: com.apple.dock
+    key: show-recents
+    type: bool
+    value: false
+  notify: restart dock
+  tags: [ 'macos', 'dock' ]
+
+# --- Sound ---
+- name: macOS | Set alert sound to Heroine
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: com.apple.sound.beep.sound
+    type: string
+    value: /System/Library/Sounds/Hero.aiff
+  tags: [ 'macos', 'sound' ]
+
+- name: macOS | Disable startup sound
+  community.general.osx_defaults:
+    domain: com.apple.loginwindow
+    key: PlayStartupSound
+    type: bool
+    value: false
+  become: true
+  tags: [ 'macos', 'sound' ]
+
+# --- Finder ---
+- name: macOS | Show all filename extensions in Finder
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: AppleShowAllExtensions
+    type: bool
+    value: true
+  tags: [ 'macos', 'finder' ]
+
+- name: macOS | Disable warning when changing file extension
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: FXEnableExtensionChangeWarning
+    type: bool
+    value: false
+  tags: [ 'macos', 'finder' ]
+
+- name: macOS | Search the current folder by default in Finder
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: FXDefaultSearchScope
+    type: string
+    value: SCcf
+  tags: [ 'macos', 'finder' ]
+
+- name: macOS | Disable recent tags in Finder sidebar
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: ShowRecentTags
+    type: bool
+    value: false
+  tags: [ 'macos', 'finder' ]

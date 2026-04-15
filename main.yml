@@ -21,11 +21,9 @@
       tags: [ 'dock' ]
 
   tasks:
-    - name: Register Git user and email
-      shell: |
-        git config --global user.name "{{ git.global.user_name }}"
-        git config --global user.email "{{ git.global.user_email }}"
-      when: git is defined
+    - name: Configure macOS defaults
+      include_tasks: tasks/macos-defaults.yml
+      tags: [ 'macos' ]
 
     - block:
         - name: Run configured post-provision ansible task files.
@@ -33,4 +31,10 @@
           loop_control:
             loop_var: outer_item
           with_fileglob: "{{ post_provision_tasks|default(omit) }}"
+      when: post_provision_tasks is defined and post_provision_tasks | length > 0
       tags: [ 'post' ]
+
+  handlers:
+    - name: restart dock
+      shell: killall Dock
+      changed_when: false

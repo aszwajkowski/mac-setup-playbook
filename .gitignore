@@ -5,7 +5,8 @@ patches
 
 ### Ansible ###
 *.retry
-roles
+roles/*/
+!roles/custom_*/
 
 ### macOS ###
 # General

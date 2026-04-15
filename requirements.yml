@@ -1,6 +1,10 @@
 ---
 roles:
   - name: elliotweiser.osx-command-line-tools
-    
+    version: "1.3.0"
+
 collections:
   - name: geerlingguy.mac
+    version: "4.1.0"
+  - name: community.general
+    version: ">=9.0.0"

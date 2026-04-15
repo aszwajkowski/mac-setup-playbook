@@ -2,9 +2,7 @@
 downloads: ~/.ansible-downloads/
 
 # Homebrew settings
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
+homebrew_taps: []
 
 homebrew_installed_packages:
   - act # Run GitHub Actions locally
@@ -24,7 +22,6 @@ homebrew_installed_packages:
   - fzf # Command-line fuzzy finder
   - git
   - gh
-  - git
   - git-lfs
   - gnu-time
   - go
