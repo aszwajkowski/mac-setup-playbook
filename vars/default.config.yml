@@ -74,8 +74,6 @@ homebrew_installed_packages:
   - zoxide # Smarter cd command with fuzzy matching and ranking based on frecency
   - zsh-autosuggestions # Fish-like autosuggestions for zsh
   - zsh-syntax-highlighting # Fish-like syntax highlighting for zsh
-#  - chruby # Ruby package# manager
-#  - ruby-install # Ruby
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -95,7 +93,7 @@ homebrew_cask_apps:
   - josm # OpenStreetMap editor
   - logitech-g-hub # Logitech peripherals
   - microsoft-azure-storage-explorer # Azure resources explorer
-  - microsoft-remote-desktop # Remote desktop
+  - windows-app # Remote desktop (replaces microsoft-remote-desktop)
   - nikitabobko/tap/aerospace # Tiling window manager
   - obs # Screen recording and streaming
   - obsidian # Note-taking app
