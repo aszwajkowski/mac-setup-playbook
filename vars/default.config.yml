@@ -13,9 +13,12 @@ homebrew_installed_packages:
   - azcopy
   - azure-cli
   - Azure/kubelogin/kubelogin
+  - bash # Bourne-Again SHell
   - bazelisk # Bazel version manager
   - btop # Resource monitor
   - databricks/tap/databricks
+  - docker-credential-helper # Platform keystore credential helper for Docker
+  - docutils # Text processing system for reStructuredText
   - dlvhdr/formulae/diffnav # Diff tool for navigating differences in files
   - eza # Modern replacement for ls
   - FelixKratz/formulae/borders # Colored borders around windows
@@ -26,13 +29,19 @@ homebrew_installed_packages:
   - gnu-time
   - go
   - go-task # Build tool ; Alternative to Makefiles, etc.
+  - golang-migrate # Database migrations CLI tool
   - gpg
   - gradle
   - graphviz
+  - hadoop # Framework for distributed processing of large data sets
   - hashicorp/tap/terraform # Infrastructure as code
   - hashicorp/tap/vault # Secrets management
+  - hcledit # Command line editor for HCL
   - helm
   - httpie
+  - infracost # Cost estimates for Terraform
+  - jfrog-cli # Command-line interface for JFrog products
+  - jira-cli # Feature-rich interactive Jira CLI
   - jj # Jujutsu ; git-compatible distributed version control system
   - jq
   - k9s
@@ -50,11 +59,16 @@ homebrew_installed_packages:
   - sesh # Terminal session manager for tmux
   - superfile # Console file manager
   - stow # Symlink manager
+  - terraform-docs # Tool to generate documentation from Terraform modules
   - terragrunt
+  - terrascan # Detect compliance and security violations across IaC
   - tflint
+  - tfsec # Static analysis security scanner for Terraform
+  - tfupdate # Update version constraints in Terraform configurations
   - tmux # Terminal multiplexer
   - tpm # Tmux plugin manager
   - trivy
+  - uv # Extremely fast Python package installer and resolver
   - watch
   - wget
   - zoxide # Smarter cd command with fuzzy matching and ranking based on frecency
@@ -62,8 +76,6 @@ homebrew_installed_packages:
   - zsh-syntax-highlighting # Fish-like syntax highlighting for zsh
 #  - chruby # Ruby package# manager
 #  - ruby-install # Ruby
-
-homebrew_uninstalled_packages: []
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
